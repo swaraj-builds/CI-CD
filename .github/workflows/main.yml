@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: echo "Started"
       - run: pwd
-      - run: ls
+      - run: l
