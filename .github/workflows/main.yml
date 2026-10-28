@@ -1,6 +1,13 @@
-<html>
-<body>
-    <h1>CI Demo</h1>
-    <h2>CI Demo</h2>
-    </body>
-</html>
+name: CI Pipeline
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Started"
+      - run: pwd
+      - run: ls
